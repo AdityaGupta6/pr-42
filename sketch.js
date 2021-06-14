@@ -16,7 +16,7 @@ function setup() {
   iss=createSprite(750,350,50,50);
   iss.addImage(issImg);
   
-  spacecraft=createSprite(710,490,50,50);
+  spacecraft=createSprite(717,490,50,50);
   spacecraft.addAnimation("spacecraft1",spacecraftImg1);
   spacecraft.addAnimation("spacecraft2",spacecraftImg2);
   spacecraft.addAnimation("spacecraft3",spacecraftImg3);
@@ -39,12 +39,12 @@ function draw() {
   }
   if (keyCode===38) {
     
-    spacecraft.y -=2;
+    spacecraft.y -=2;8
   }
   if (keyCode===40) {
     spacecraft.changeAnimation("spacecraft2",spacecraftImg2)
   }
- if (spacecraft.x==683 &&spacecraft.y<=435&&spacecraft.y>=400) {
+ if (spacecraft.x>=680&&spacecraft.y<=690 &&spacecraft.y<=435&&spacecraft.y>=400) {
    hasDocked=true
  }
 
