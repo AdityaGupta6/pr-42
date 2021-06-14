@@ -27,7 +27,7 @@ function setup() {
 function draw() {
   background(spaceImg);  
   if (!hasDocked) {
-     spacecraft.x = Math.round(random(675,680));
+    spacecraft.x = spacecraft.x + random(-1,1);
     
     if (keyCode===37) {
     spacecraft.changeAnimation("spacecraft3",spacecraftImg3)
@@ -44,7 +44,7 @@ function draw() {
   if (keyCode===40) {
     spacecraft.changeAnimation("spacecraft2",spacecraftImg2)
   }
- if (spacecraft.x>=680&&spacecraft.y<=690 &&spacecraft.y<=435&&spacecraft.y>=400) {
+ if (spacecraft.x>=680&&spacecraft.y<=683 &&spacecraft.y<=435&&spacecraft.y>=400) {
    hasDocked=true
  }
 
