@@ -44,7 +44,7 @@ function draw() {
   if (keyCode===40) {
     spacecraft.changeAnimation("spacecraft2",spacecraftImg2)
   }
- if (spacecraft.x>=680&&spacecraft.x<=683 &&spacecraft.y<=436&&spacecraft.y>=425) {
+ if (spacecraft.x>=680&&spacecraft.x<=683 &&spacecraft.y<=436&&spacecraft.y>=430) {
    hasDocked=true
  }
 
